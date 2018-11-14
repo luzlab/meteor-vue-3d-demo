@@ -1,8 +1,5 @@
 <template>
   <div id="lcdscreen">
-    <div id="cadpreview">
-      <model-stl height=480 width=800 backgroundAlpha=0 src="/monkey.stl"></model-stl>
-    </div>
     <div id="left-controls">
       <p>Left</p> 
       <v-btn large color="green">Success</v-btn>
@@ -12,6 +9,9 @@
       <p>Right</p> 
       <v-btn large color="yellow">Warning</v-btn>
       <v-btn large color="blue">Info</v-btn>
+    </div>
+    <div id="cadpreview">
+      <model-stl height=480 width=800 backgroundAlpha=0 src="/monkey.stl"></model-stl>
     </div>
   </div>
 </template>
@@ -48,22 +48,15 @@ p {
 }
 
 #cadpreview {
-  position: fixed;
-  left: 1px;
-  top: 1px;
+  position: absolute;
 }
 
 #left-controls {
-  margin-top: 30px;
   float: left;
-  width: 100px;
 }
 
 #right-controls {
-  margin-top: 30px;
-  margin-right: 50px;
   float: right;
-  width: 100px;
 }
 
 button {
