@@ -1,19 +1,18 @@
 <template>
-  <div>
-    <p>This is a Vue component and below is the current date:<br />{{date}}</p>
-    <!-- <p>This is a VueGL component and below is a ThreeJS renderer:<br ></p>
-    <vgl-renderer antialias style="height: 100vh;">
-      <vgl-scene>
-        <vgl-sphere-geometry name="sphere"></vgl-sphere-geometry>
-        <vgl-mesh-standard-material name="std"></vgl-mesh-standard-material>
-        <vgl-mesh geometry="sphere" material="std"></vgl-mesh>
-        <vgl-ambient-light color="#ffeecc"></vgl-ambient-light>
-        <vgl-directional-light position="0 1 1"></vgl-directional-light>
-      </vgl-scene>
-      <vgl-perspective-camera orbit-position="5 1 1;"></vgl-perspective-camera>
-    </vgl-renderer> -->
-    <p>This is another Vue-3d-Model component and below is a ThreeJS renderer:<br ></p>
-    <model-stl src="/monkey2.stl"></model-stl>
+  <div id="lcdscreen">
+    <div id="cadpreview">
+      <model-stl height=480 width=800 backgroundAlpha=0 src="/monkey.stl"></model-stl>
+    </div>
+    <div id="left-controls">
+      <p>Left</p> 
+      <v-btn large color="green">Success</v-btn>
+      <v-btn large color="red">Error</v-btn>
+    </div>
+    <div id="right-controls">
+      <p>Right</p> 
+      <v-btn large color="yellow">Warning</v-btn>
+      <v-btn large color="blue">Info</v-btn>
+    </div>
   </div>
 </template>
 
@@ -29,13 +28,45 @@ export default {
   mounted() {
     console.log('mounted !!! CJQ2');
   },
+
   components: { ModelStl },
 };
 </script>
 
 <style scoped>
 p {
+  display: block;
   font-size: 2em;
   text-align: center;
+}
+
+#lcdscreen {
+  height: 480px;
+  width: 800px;
+  background-color: lightgray;
+  overflow: auto;
+}
+
+#cadpreview {
+  position: fixed;
+  left: 1px;
+  top: 1px;
+}
+
+#left-controls {
+  margin-top: 30px;
+  float: left;
+  width: 100px;
+}
+
+#right-controls {
+  margin-top: 30px;
+  margin-right: 50px;
+  float: right;
+  width: 100px;
+}
+
+button {
+  display: block;
 }
 </style>
