@@ -1,1 +1,30 @@
-node_modules/
+/node_modules/
+
+/test/e2e/reports
+selenium-debug.log
+
+.DS_Store
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+
+# logss 
+npm-debug.log
+
+# Only in template repos.
+package-lock.json
+
+# ignore server configuration
+*.azcli
+
+# nyc test coverage
+.nyc_output
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# ignore server configuration
+# config/development.js

@@ -11,7 +11,7 @@
       <v-btn large color="blue">Info</v-btn>
     </div>
     <div id="cadpreview">
-      <model-stl height=480 width=800 backgroundAlpha=0 src="/monkey.stl"></model-stl>
+      <model-stl height=480 width=800 backgroundAlpha=0.0 src="/makerook_small.stl"></model-stl>
     </div>
   </div>
 </template>

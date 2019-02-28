@@ -2,16 +2,18 @@
   "name": "meteor-demo",
   "private": true,
   "scripts": {
-    "start": "meteor run",
-    "test": "meteor test --once --driver-package meteortesting:mocha",
-    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "start": "NO_HMR=1 meteor run",
+    "test": "NO_HMR=1 meteor test --once --driver-package meteortesting:mocha",
+    "test-watch": "NO_HMR=1 TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
     "material-design-icons-iconfont": "^4.0.2",
+    "mesh-simplify": "^2.0.0",
     "meteor-node-stubs": "^0.4.1",
     "moment": "^2.22.2",
+    "parse-stl": "^1.0.2",
     "roboto-npm-webfont": "^1.0.1",
     "vue": "^2.5.17",
     "vue-3d-model": "^1.0.2",
