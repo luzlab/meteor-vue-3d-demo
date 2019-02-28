@@ -1,0 +1,5 @@
+{
+  // this is for DefinitelyTyped
+  "baseUrl": "types",
+  "typeRoots": ["types"]
+}

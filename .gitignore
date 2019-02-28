@@ -15,7 +15,7 @@ Thumbs.db
 npm-debug.log
 
 # Only in template repos.
-package-lock.json
+./package-lock.json
 
 # ignore server configuration
 *.azcli

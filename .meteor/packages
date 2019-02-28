@@ -24,3 +24,6 @@ akryum:vue-component
 fourseven:scss
 fortawesome:fontawesome
 akryum:vue-sass
+nathantreid:vue-typescript
+adornis:typescript
+cloudant:couchdb
