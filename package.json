@@ -5,10 +5,14 @@
     "start": "NO_HMR=1 meteor run",
     "test": "NO_HMR=1 meteor test --once --driver-package meteortesting:mocha",
     "test-watch": "NO_HMR=1 TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
-    "visualize": "meteor --production --extra-packages bundle-visualizer"
+    "visualize": "meteor --production --extra-packages bundle-visualizer",
+    "debug-vue": "vue-devtools"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
+    "@types/bonjour": "^3.5.5",
+    "@types/meteor": "^1.4.27",
+    "bonjour": "^3.5.0",
     "material-design-icons-iconfont": "^4.0.2",
     "mesh-simplify": "^2.0.0",
     "meteor-node-stubs": "^0.4.1",
@@ -48,6 +52,7 @@
   "devDependencies": {
     "@kurosame/tslint-config-vue": "^1.4.0",
     "@types/node": "^11.9.5",
+    "@vue/devtools": "^4.1.5",
     "husky": "^1.3.1",
     "prettier-tslint": "^0.4.2",
     "tslint": "^5.13.0",

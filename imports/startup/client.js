@@ -4,6 +4,7 @@ import 'roboto-npm-webfont';
 // import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 import Vue from 'vue';
+Vue.config.devtools = true;
 
 import app from '/imports/ui/app.vue';
 import VueMeteorTracker from 'vue-meteor-tracker';

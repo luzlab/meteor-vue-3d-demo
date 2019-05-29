@@ -1,5 +1,12 @@
 {
-  // this is for DefinitelyTyped
-  "baseUrl": "types",
-  "typeRoots": ["types"]
+  "compilerOptions": {
+    "outDir": "./built/",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es5"
+  },
+  "include": ["./{client,server,imports}/**/*"]
 }
