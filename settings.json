@@ -1,0 +1,14 @@
+{
+  "public": {},
+  "private": {},
+  "loggly": {
+    "token": "your-really-long-input-token",
+    "subdomain": "your-subdomain",
+    "auth": {
+      "username": "your-username",
+      "password": "your-password"
+    },
+    "tags": ["global-tag"],
+    "json": "true"
+  }
+}
